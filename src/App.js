@@ -1,26 +1,35 @@
 
 import React from 'react';
-import Navbar from './components/Navbar';
-import Slider from './components/Slider';
-import Products from './components/Products';
-import Footer from './components/Footer';
+import HomeScreen from './screens/HomeScreen';
 import './App.css';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, BrowserRouter, Routes } from 'react-router-dom';
+import "bootstrap/dist/css/bootstrap.min.css"
+import Login from "./components/Login";
+import Navbar from './components/Navbar';
+import Checkout from './components/CheckoutProduct';
+import Footer from './components/Footer';
+import CheckoutScreen from './screens/CheckoutScreen';
 
 function App() {
   return (
-    <>
-      <Router>
-        <Navbar />
-        <img src="/images/banner.jpg" alt="banner" />
-        <Slider />
+    <BrowserRouter>
+    <Routes>
+      
+        {/* <Navbar /> */}
+        {/* <img src="/images/banner.jpg" alt="banner" /> */}
+        {/* <Slider />
         <Products />
-        <Footer />
+        <Footer /> */}
+        <Route path="/" element={<HomeScreen />}/>
+
+        <Route path="/login" element={<><Navbar /><Login /></>}/> 
+
+        <Route path="/checkout" element={<CheckoutScreen/>}/>
         {/* <Switch>
         </Switch> */}
-      </Router>
-
-    </>
+     
+      </Routes>
+      </BrowserRouter>
 
 
   );
