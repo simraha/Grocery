@@ -1,8 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { useState } from 'react';
 import './Products.css';
 
 function Products() {
+  const [items, setItems] = useState(0)
+
+  function addToCart() {
+    var i = items + 1
+    setItems(i)
+  }
+
   return (
     <>
     <section id="popular-product">
@@ -18,9 +26,10 @@ function Products() {
         <strong>Eggs</strong>
         <span class="quantity">1 KG</span>
         <span class="price">$2</span>
-        <a href="#" class="cart-btn">
+        <a onClick={addToCart} href="#" class="cart-btn">
           <i class="fa fa-shopping-bag"></i>Add To Cart
         </a>
+        
         <a href="#" class="like-btn">
           <i class='bi bi-heart-fill'></i>
         </a>

@@ -8,7 +8,9 @@ function Navbar() {
             <nav class="navigation">
                 {/* <!---logo------------> */}
                 <a href="#" class="logo">
-                    <span>e</span>Grocery
+                    <Link to="/">
+                        <span>e</span>Grocery
+                    </Link>
                 </a>
 
                 {/* <!--menu-------------> */}
@@ -31,13 +33,18 @@ function Navbar() {
                     </a>
                     {/* <!--cart-----> */}
                     <a href="#" class="cart">
+                    <Link to="/checkout">
                         <i class="fas fa-shopping-cart"></i>
                         <span>0</span>
+                    </Link>
                     </a>
                     {/* <!-- login --> */}
-                    <a href="#" class="cart">
+                    <a href="#" class="login">
+                    <Link to="/login">
                         <i class="fas fa-sign-in-alt"></i>
+                        </Link>
                     </a>
+                    
                 </div>
             </nav>
         </>
