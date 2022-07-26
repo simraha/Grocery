@@ -12,7 +12,7 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <img src="/images/banner.jpg" alt="banner" />
+        <img src="/images/banner.jpg" alt="banner" class="center" height="250px"/>
         <Slider />
         <Products />
         <Footer />
