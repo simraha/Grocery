@@ -48,7 +48,8 @@ function Slider() {
                     </div>
                     <a id="prev" class="control prev"></a>
                     <a id="next" class="control next"></a>
-                    <div class="dots" onClick={myFunction()}>
+                    <div class="dots" onClick={myFunction}>
+                        
                     </div>
                 </div>
             </section>
