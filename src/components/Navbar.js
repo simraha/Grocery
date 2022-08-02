@@ -18,13 +18,13 @@ function Navbar() {
                     <li><a href="#" class="active">Home</a></li>
                     <li><a href="#">Categories</a></li>
                     <li><a href="#">Our Packages</a></li>
-                    <li><a href="#">Our App</a></li>
+                    <li><a href="#">About Us</a></li>
                 </ul>
 
                 {/* <!--right-nav-(cart-like)--> */}
                 <div class="right">
                     <a href="#" class="search">
-                        <input type="text" />
+                        <input type="text" placeholder="Search" />
                     </a>
                     {/* <!--like-----> */}
                     <a href="#" class="like">

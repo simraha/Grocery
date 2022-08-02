@@ -90,8 +90,7 @@
     transition: all ease 0.3s;
   }
   
-  input {
-    /* margin-top:5px; */
+ .input {
     border-radius: 50%;
     width: 30px;
     cursor: pointer;
