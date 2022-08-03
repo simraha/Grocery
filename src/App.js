@@ -8,7 +8,6 @@ import Navbar from './components/Navbar';
 import Checkout from './components/CheckoutProduct';
 import Footer from './components/Footer';
 import CheckoutScreen from './screens/CheckoutScreen';
-import AboutScreen from './screens/AboutScreen';
  
 function App() {
   return (
@@ -20,7 +19,11 @@ function App() {
         <Route path="/login" element={<><Navbar /><Login /></>}/> 
 
         <Route path="/checkout" element={<CheckoutScreen/>}/>
-        {/* <Route path="/about" element={<AboutScreen/>}/> */}
+        
+        <Route path="/about" element={<HomeScreen />}/> 
+
+        {/*<Route path="/favorites" element={<FavoritesScreen/>}/>*/}
+
         {/* <Switch>
         </Switch> */}
      
