@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+      padding: 0;
+  }
+
+  .aboutproduct-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .aboutproduct-heading h3{
+    font-size: 1.56rem;
+    font-weight: 700;
+    color: #202020;
+    letter-spacing: 0.5px;
+  }
+  
+  .aboutproduct-heading span {
+    color: #a7a7a7;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  
+  #category,
+  #popular-product {
+    display:flex;
+    flex-direction: column;
+    max-width: 1000px;
+    margin: 80px auto;
+  }
+  

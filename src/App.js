@@ -8,6 +8,10 @@ import Navbar from './components/Navbar';
 import Checkout from './components/CheckoutProduct';
 import Footer from './components/Footer';
 import CheckoutScreen from './screens/CheckoutScreen';
+import AboutScreen from './screens/AboutScreen';
+import FavoritesScreen from './screens/FavoritesScreen';
+import CategoryScreen from './screens/CategoryScreen';
+import PackagesScreen from './screens/PackagesScreen';
  
 function App() {
   return (
@@ -20,9 +24,13 @@ function App() {
 
         <Route path="/checkout" element={<CheckoutScreen/>}/>
         
-        <Route path="/about" element={<HomeScreen />}/> 
+        <Route path="/about" element={<AboutScreen />}/>
 
-        {/*<Route path="/favorites" element={<FavoritesScreen/>}/>*/}
+        <Route path="/favorite" element={<FavoritesScreen/>}/>
+
+        <Route path="/category" element={<CategoryScreen/>}/>
+
+        <Route path="/package" element={<PackagesScreen/>}/>
 
         {/* <Switch>
         </Switch> */}

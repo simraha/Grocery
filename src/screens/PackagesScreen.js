@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
-import CheckoutProduct from '../components/CheckoutProduct';
+import Package from '../components/Package';
 import Footer from '../components/Footer';
 
-const CheckoutScreen = () => {
+const PackagesScreen = () => {
   return (
     <div>
         <Navbar />  
-        <CheckoutProduct /> 
+        <Package /> 
         <Footer /> 
     </div>
   )
 }
 
-export default CheckoutScreen
+export default PackagesScreen

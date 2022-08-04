@@ -15,10 +15,26 @@ function Navbar() {
 
                 {/* <!--menu-------------> */}
                 <ul class="menu">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">Categories</a></li>
-                    <li><a href="#">Our Packages</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <Link to="/">
+                        <li> 
+                            <a href="#" class="active">Home</a>
+                        </li>
+                    </Link>
+                    <Link to ="/category">
+                        <li> 
+                            <a href="#">Categories</a>
+                        </li>
+                    </Link>
+                    <Link to ="/package">
+                        <li> 
+                            <a href="#">Our Packages</a>
+                        </li>
+                    </Link>
+                    <Link to ="/about">
+                        <li> 
+                            <a href="#">About Us</a>
+                        </li>
+                    </Link>
                 </ul>
 
                 {/* <!--right-nav-(cart-like)--> */}
@@ -28,8 +44,10 @@ function Navbar() {
                     </a>
                     {/* <!--like-----> */}
                     <a href="#" class="like">
-                        <i class="far fa-heart"></i>
+                    <Link to="/favorite"> 
+                    <i class="far fa-heart"></i>
                         <span>0</span>
+                    </Link>
                     </a>
                     {/* <!--cart-----> */}
                     <a href="#" class="cart">

@@ -1,16 +1,16 @@
 import React from 'react'
 import Navbar from '../components/Navbar';
-import CheckoutProduct from '../components/CheckoutProduct';
+import Category from '../components/Category';
 import Footer from '../components/Footer';
 
-const CheckoutScreen = () => {
+const CategoryScreen = () => {
   return (
     <div>
         <Navbar />  
-        <CheckoutProduct /> 
+        <Category /> 
         <Footer /> 
     </div>
   )
 }
 
-export default CheckoutScreen
+export default CategoryScreen
