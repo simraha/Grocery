@@ -15,7 +15,7 @@ function Favorite() {
     <>
     <section id="popular-product">
     <div class="product-heading">
-      <h3>Favorite Products</h3>
+      <h3>Your favorites....</h3>
       <span>All</span>
     </div>
 
